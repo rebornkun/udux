@@ -1,0 +1,31 @@
+:root{
+  --back-shade: #0F0F0F;
+  --back: #000000;
+  --text-pri: #D9D9D9;
+  --line-pri: #282828;
+  --gold: #FBBA12;
+}
+
+@font-face {
+  font-family: 'Bw Modelica Medium';
+  src: url('../assets/woff/BwModelica-Medium.woff');
+}
+@font-face {
+  font-family: 'Bw Modelica Regular';
+  src: url('../assets/woff/BwModelica-Regular.woff');
+}
+@font-face {
+  font-family: 'Bw Modelica Light';
+  src: url('../assets/woff/BwModelica-Light.woff');
+}
+
+p{
+  font-family: 'Bw Modelica Regular', cursive;
+}
+
+.app_container{
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
