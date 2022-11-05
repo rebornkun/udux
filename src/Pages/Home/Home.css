@@ -18,61 +18,7 @@
     height: fit-content;
     padding-bottom: 3rem;
 }
-.searchbar_part{
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem;
-    padding: 0rem 0.5rem;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    backdrop-filter: blur(10px);
-    background-color: #1d2123d1;
-}
- .searchbar_part .arrow_controllers{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
- .searchbar_part .arrow_controllers .arrow_box{
-    height: 2.5rem;
-    width: 2.5rem;
-    background: var(--back-shade);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
- .searchbar_part .arrow_controllers .arrow_box svg{
-    height: 2rem;
-    width: 2rem;
-}
 
- .searchbar_part .searchbar{
-    height: 60%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
-.search_icon{
-    cursor: pointer;
-}
- .searchbar_part .searchbar input{
-    background: none;
-    outline: none;
-    border: none;
-    color: var(--text-pri);
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    font-family: 'Bw Modelica Medium', cursive;
-}
 
 
 .home_page_container .banner_part{
@@ -89,4 +35,40 @@
 }
 .welcome_back_part h1{
     margin: 1.5rem 0rem 2rem;
+}
+
+@media screen and (max-width: 1280px) {
+
+    
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .Home_page{
+        width: 100vw;
+    } 
+
+    .home_page_container .banner_part img {
+        width: auto;
+        height: 15rem;
+    }
+
+    .home_page_container .banner_part {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 860px) {
+
+  
+
+}
+
+@media screen and (max-width: 576px) {
+
+
 }

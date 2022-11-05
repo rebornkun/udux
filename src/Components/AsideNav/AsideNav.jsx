@@ -29,9 +29,6 @@ const AsideNav = () => {
     return (
         <>
             <div className='asidenav'>
-                <div className='profile_display_block'>
-                    <Profilebox />
-                </div>
                 <div className='asidenav_container'>
                     <div className='nav'>
                         <div className='nav_item home_nav'>
