@@ -4,6 +4,7 @@
     background: var(--back);
     background-image: url('../../assets/images/Mask.png');
     overflow: hidden;
+    position: fixed;
 }
 
 .asidenav_container{
