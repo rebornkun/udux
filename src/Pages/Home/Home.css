@@ -1,29 +1,43 @@
 .Home_page{
-    height: 100%;
+    height: 100vh;
     width: 82vw;
     background: var(--back);
     overflow: overlay;
+    padding-bottom: 3rem;
 } 
+.Home_page::-webkit-scrollbar{
+    display: none;
+}
+.Home_page::-moz-scrollbar{
+    display: none;
+}
 
 .home_page_container{
     padding: 0rem 0.5rem;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    padding-bottom: 3rem;
 }
-.home_page_container .searchbar_part{
+.searchbar_part{
     width: 100%;
     height: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4rem;
+    padding: 0rem 0.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    background-color: #1d2123d1;
 }
-.home_page_container .searchbar_part .arrow_controllers{
+ .searchbar_part .arrow_controllers{
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-.home_page_container .searchbar_part .arrow_controllers .arrow_box{
+ .searchbar_part .arrow_controllers .arrow_box{
     height: 2.5rem;
     width: 2.5rem;
     background: var(--back-shade);
@@ -33,12 +47,12 @@
     align-items: center;
     cursor: pointer;
 }
-.home_page_container .searchbar_part .arrow_controllers .arrow_box svg{
+ .searchbar_part .arrow_controllers .arrow_box svg{
     height: 2rem;
     width: 2rem;
 }
 
-.home_page_container .searchbar_part .searchbar{
+ .searchbar_part .searchbar{
     height: 60%;
     padding: 1rem;
     display: flex;
@@ -49,7 +63,7 @@
 .search_icon{
     cursor: pointer;
 }
-.home_page_container .searchbar_part .searchbar input{
+ .searchbar_part .searchbar input{
     background: none;
     outline: none;
     border: none;
@@ -59,6 +73,11 @@
     letter-spacing: 0.5px;
     font-family: 'Bw Modelica Medium', cursive;
 }
+
+
+.home_page_container .banner_part{
+    margin-top: 5rem;
+}
 .home_page_container .banner_part img{
     width: 100%;
 }
@@ -66,6 +85,7 @@
 .welcome_back_part{
     display: flex;
     flex-direction: column;
+    margin-bottom: 0.5rem;
 }
 .welcome_back_part h1{
     margin: 1.5rem 0rem 2rem;
